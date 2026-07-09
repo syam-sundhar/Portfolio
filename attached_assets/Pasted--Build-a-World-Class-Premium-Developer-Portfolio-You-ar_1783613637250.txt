@@ -1,0 +1,719 @@
+# Build a World-Class Premium Developer Portfolio
+
+You are an award-winning Senior Frontend Engineer, Creative UI Designer, Motion Designer, and UX Architect.
+
+Design and develop an exceptional portfolio website for **Sirivella Syam Sundhar**, an **Aspiring Data Scientist & AI/ML Engineer**.
+
+The website should immediately communicate craftsmanship, technical excellence, and attention to detail—on par with portfolios from engineers at OpenAI, Anthropic, Stripe, Vercel, Apple, Linear, or Google.
+
+This is **not** a template portfolio.
+
+It should feel like a carefully designed premium product.
+
+---
+
+# Objective
+
+Create a portfolio that is:
+
+* Elegant
+* Memorable
+* Highly interactive
+* Modern
+* Minimal
+* Sophisticated
+* Performance-first
+
+Every section should feel intentionally designed.
+
+Visitors should immediately think:
+
+> "This developer clearly cares about quality."
+
+---
+
+# Tech Stack
+
+* Next.js 15 (App Router)
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* Lucide React Icons
+* Responsive Design
+* SEO Optimized
+* Accessible
+* Performance Optimized
+* Dark Mode Only
+
+No unnecessary dependencies.
+
+---
+
+# Design Philosophy
+
+Think of the design language used by:
+
+* Vercel
+* Stripe
+* OpenAI
+* GitHub
+* Linear
+* Apple
+* Notion
+* Raycast
+
+Avoid generic portfolio layouts.
+
+Avoid template-like cards.
+
+Avoid looking like a dashboard.
+
+Every section should feel custom-designed.
+
+---
+
+# Color Palette
+
+Background
+
+#0B0F19
+
+Primary Text
+
+#FFFFFF
+
+Secondary Text
+
+#94A3B8
+
+Accent
+
+#3B82F6
+
+Success
+
+#22C55E
+
+Borders
+
+border-slate-800
+
+Do NOT use:
+
+* gradients
+* glassmorphism
+* neumorphism
+* excessive shadows
+* glowing buttons
+* colorful cards
+* neon effects
+
+The website should feel engineered rather than decorated.
+
+---
+
+# Typography
+
+Use:
+
+Geist
+
+Fallback:
+
+Inter
+
+Weights:
+
+* Medium
+* Semibold
+
+Requirements:
+
+* Large elegant headings
+* Comfortable reading width
+* Perfect spacing
+* Excellent hierarchy
+* Maximum readability
+* Strict 8pt spacing system
+* Generous whitespace
+
+---
+
+# Layout
+
+Single Page
+
+Container
+
+max-w-7xl
+
+Large spacing between sections
+
+Smooth scrolling
+
+Subtle divider lines
+
+Every section should breathe.
+
+---
+
+# Motion Design
+
+Use Framer Motion extensively but elegantly.
+
+Animations should feel premium.
+
+Allowed:
+
+* Fade Up
+* Slide Up
+* Reveal on Scroll
+* Section Stagger
+* Text Reveal
+* Image Reveal
+* Mask Reveal
+* Smooth Parallax
+* Cursor-aware hover interactions
+* Scroll-linked motion
+* Animated underline
+* Floating background shapes (extremely subtle)
+* Magnetic buttons
+* Smooth page entrance
+* Section transitions
+
+Animation duration:
+
+0.35–0.5s
+
+Animation easing should be premium.
+
+Everything should feel smooth.
+
+Never distracting.
+
+Never bouncy.
+
+Never flashy.
+
+---
+
+# Background Effects
+
+Keep the background minimal but alive.
+
+Ideas:
+
+* subtle animated grid
+* moving noise texture
+* slow floating particles
+* animated thin lines
+* blueprint-inspired elements
+* faint geometric patterns
+* cursor-reactive accents
+
+Everything should stay below 5% opacity.
+
+---
+
+# Navigation
+
+Sticky navigation
+
+Minimal transparent background
+
+Backdrop blur (very subtle)
+
+Left
+
+SYAM
+
+Right
+
+* About
+* Skills
+* Education
+* Experience
+* Projects
+* Achievements
+* Contact
+
+Hover
+
+Only opacity transition
+
+Active section indicator
+
+Smooth scrolling
+
+Mobile menu should have elegant animations.
+
+---
+
+# Hero Section
+
+Split Layout
+
+Left
+
+Large typography
+
+# Sirivella Syam Sundhar
+
+Subtitle
+
+Aspiring Data Scientist & AI/ML Engineer
+
+Description
+
+I build machine learning solutions that transform data into meaningful insights. My focus is on data preprocessing, predictive modeling, deep learning, and deploying AI solutions that solve real-world problems.
+
+CTA Buttons
+
+Primary
+
+View Projects
+
+Secondary
+
+Download Resume
+
+Social Links
+
+Display elegant icons with labels.
+
+Use Lucide React icons.
+
+Include
+
+* Email
+* LinkedIn
+* GitHub
+* Kaggle
+* LeetCode
+* HackerRank
+
+All external links
+
+target="_blank"
+
+Hover
+
+Subtle slide
+
+Underline animation
+
+Opacity transition
+
+---
+
+Right Side
+
+Beautiful image component
+
+Use uploaded professional image
+
+Requirements
+
+* aspect-square
+* rounded-xl
+* overflow-hidden
+* border border-slate-800
+* object-cover
+* lazy loading
+
+Image interactions
+
+* slight zoom
+* subtle parallax
+* smooth reveal
+* elegant hover border animation
+
+Never crop the face.
+
+Alt
+
+Professional headshot of Sirivella Syam Sundhar
+
+---
+
+# About Section
+
+Creative two-column layout
+
+Left
+
+Large heading
+
+About
+
+Right
+
+Aspiring Data Scientist with practical experience in developing machine learning and deep learning models, performing data preprocessing, feature engineering, and evaluating model performance. Passionate about building intelligent systems using Python, TensorFlow, SQL, and Scikit-learn while continuously learning modern AI technologies.
+
+Animate paragraph line-by-line on scroll.
+
+---
+
+# Skills
+
+Create a premium skills showcase.
+
+Do NOT use:
+
+* progress bars
+* percentages
+* ratings
+
+Instead
+
+Create elegant bordered technology pills.
+
+Organize by category.
+
+Programming
+
+* Python
+* SQL
+
+Machine Learning
+
+* Scikit-learn
+* TensorFlow
+
+Data Analysis
+
+* NumPy
+* Pandas
+
+Visualization
+
+* Matplotlib
+* Seaborn
+
+Future Learning
+
+* Deep Learning
+* NLP
+* Generative AI
+
+Hover
+
+Subtle lift
+
+Border transition
+
+Animated appearance
+
+---
+
+# Education
+
+Minimal vertical timeline
+
+Thin line
+
+Minimal nodes
+
+Elegant typography
+
+Entry
+
+IntelliPaat Academy
+
+AI & Data Science
+
+Entry
+
+Aditya University
+
+Bachelor of Computer Science
+
+Reveal timeline while scrolling.
+
+---
+
+# Experience
+
+Responsive grid
+
+Cards
+
+* bordered
+* rounded-xl
+* generous padding
+
+No shadows.
+
+Use elegant icons.
+
+Cards
+
+Smart India Hackathon
+
+Role
+
+Team Leader
+
+Description
+
+Led a collaborative team in designing innovative AI-driven solutions under strict deadlines.
+
+Digital Campus 2.0 Google Cloud Hackathon
+
+Description
+
+Participated in cloud-based solution development using Google Cloud technologies.
+
+Cisco Data Science Beginner
+
+Description
+
+Completed foundational training covering Python, Machine Learning, and Data Analytics.
+
+Hover
+
+Border animation
+
+Slight elevation
+
+---
+
+# Projects
+
+Populate from a TypeScript array.
+
+Each project
+
+* title
+* description
+* technologies
+* GitHub
+* Live Demo
+
+Placeholder projects
+
+* AI Project
+* Machine Learning Project
+* Data Analysis Project
+* Portfolio Website
+
+Cards should include
+
+* technology chips
+* elegant action buttons
+* repository icon
+* external link icon
+
+Hover
+
+Image reveal
+
+Border animation
+
+Smooth transition
+
+---
+
+# Achievements
+
+Create a premium horizontal timeline or milestone layout.
+
+Each achievement should animate independently while scrolling.
+
+---
+
+# Contact
+
+Minimal centered section
+
+Heading
+
+Let's Build Something Great
+
+Text
+
+I'm always open to internships, collaborations, and exciting AI opportunities.
+
+Buttons
+
+* Email Me
+* LinkedIn
+* GitHub
+
+Use elegant icons.
+
+---
+
+# Footer
+
+Thin divider
+
+Centered
+
+© 2026 Sirivella Syam Sundhar
+
+Built with Next.js & Tailwind CSS.
+
+---
+
+# Icons
+
+Use Lucide React icons consistently.
+
+Never use emojis.
+
+Use icons only where they improve usability.
+
+Examples
+
+* Mail
+* Github
+* Linkedin
+* External Link
+* Download
+* Code
+* Database
+* Brain
+* Award
+* Graduation Cap
+* Folder
+* Briefcase
+* Arrow Right
+
+Icons should be minimal.
+
+Perfectly aligned.
+
+---
+
+# Responsiveness
+
+Desktop
+
+Tablet
+
+Mobile
+
+No horizontal scrolling.
+
+Maintain generous spacing.
+
+Touch-friendly interactions.
+
+---
+
+# Accessibility
+
+* Semantic HTML
+* Proper heading hierarchy
+* ARIA labels
+* Keyboard navigation
+* Focus states
+* Lazy-loaded images
+* High contrast
+* Screen reader friendly
+
+---
+
+# SEO
+
+Generate complete metadata.
+
+Include
+
+* title
+* description
+* keywords
+* Open Graph
+* Twitter Cards
+* favicon
+* canonical URL
+* robots metadata
+
+Use JSON-LD structured data for a Personal Portfolio.
+
+---
+
+# Folder Structure
+
+app/
+
+components/
+
+sections/
+
+constants/
+
+hooks/
+
+lib/
+
+public/
+
+styles/
+
+types/
+
+All sections must be reusable.
+
+No duplicated code.
+
+No inline styles.
+
+Clean architecture.
+
+---
+
+# Performance
+
+* Lazy load sections where appropriate
+* Optimize images
+* Use Next/Image
+* Minimize re-renders
+* Tree-shake icons
+* Lighthouse score above 95
+* Core Web Vitals optimized
+
+---
+
+# Image
+
+I will upload my professional profile image.
+
+Automatically use it in the Hero section.
+
+Do not crop the face.
+
+Keep the original aspect ratio.
+
+---
+
+# Links
+
+I will provide
+
+* Resume
+* GitHub
+* LinkedIn
+* Email
+* Kaggle
+* LeetCode
+* HackerRank
+* Portfolio Projects
+* Live Demo Links
+
+Every link must be fully functional.
+
+Open all external links in new tabs.
+
+---
+
+# Final Goal
+
+Build a portfolio that feels handcrafted rather than assembled.
+
+It should combine the clean engineering aesthetic of Vercel and OpenAI with carefully designed motion, sophisticated typography, immersive scroll interactions, and refined micro-animations.
+
+The portfolio must remain minimal, but every interaction should delight the visitor through subtle movement, thoughtful composition, premium spacing, elegant iconography, and smooth transitions.
+
+The result should be unique, memorable, highly polished, and production-ready—something worthy of showcasing to recruiters at leading AI and technology companies.
