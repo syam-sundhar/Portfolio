@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { BackgroundGrid } from "@/components/ui/background";
+import { CustomCursor } from "@/components/ui/cursor";
 import { Nav } from "@/components/sections/Nav";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-background text-foreground">
+      <CustomCursor />
       <BackgroundGrid />
       <Nav />
       
