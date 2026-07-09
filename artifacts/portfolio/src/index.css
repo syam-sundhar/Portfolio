@@ -68,10 +68,16 @@
 @layer base {
   * {
     @apply border-border;
-    cursor: none !important;
   }
   body {
     @apply font-sans antialiased bg-background text-foreground overflow-x-hidden;
+  }
+}
+
+/* Custom cursor only on fine-pointer (mouse) devices */
+@media (pointer: fine) and (hover: hover) {
+  * {
+    cursor: none !important;
   }
 }
 

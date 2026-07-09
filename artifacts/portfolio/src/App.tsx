@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BackgroundGrid } from "@/components/ui/background";
 import { CustomCursor } from "@/components/ui/cursor";
+import { PaperTear } from "@/components/ui/paper-tear";
 import { Nav } from "@/components/sections/Nav";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
@@ -26,12 +27,19 @@ function App() {
       
       <main className="flex flex-col">
         <Hero />
+        <PaperTear />
         <About />
+        <PaperTear />
         <Skills />
+        <PaperTear />
         <Education />
+        <PaperTear />
         <Experience />
+        <PaperTear />
         <Projects />
+        <PaperTear />
         <Achievements />
+        <PaperTear />
         <Contact />
       </main>
 
