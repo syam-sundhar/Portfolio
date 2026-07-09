@@ -48,7 +48,7 @@ function TiltCard({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ rotateX, rotateY, transformStyle: "preserve-3d", perspective: 800 }}
-      className={`relative overflow-hidden rounded-2xl border border-slate-800 bg-[#0f1420] transition-shadow duration-300 hover:shadow-[0_0_30px_-8px_rgba(59,130,246,0.35)] ${className}`}
+      className={`relative overflow-hidden rounded-2xl border border-border bg-card transition-shadow duration-300 hover:shadow-[0_4px_24px_-8px_rgba(37,99,235,0.18)] ${className}`}
     >
       {/* shimmer */}
       <motion.div
@@ -80,7 +80,7 @@ function FloatingIcon({ children }: { children: ReactNode }) {
 /* ─── skill pill ─────────────────────────────────────────────── */
 function Pill({ icon, label }: { icon: ReactNode; label: string }) {
   return (
-    <div className="flex items-center gap-2 rounded-xl border border-slate-700/60 bg-slate-900/60 px-3 py-1.5 text-xs font-medium text-slate-300 transition-colors duration-200 hover:border-primary/50 hover:text-white">
+    <div className="flex items-center gap-2 rounded-xl border border-border bg-secondary px-3 py-1.5 text-xs font-medium text-foreground transition-colors duration-200 hover:border-primary/40 hover:bg-primary/5">
       <span className="text-primary">{icon}</span>
       {label}
     </div>
@@ -133,8 +133,8 @@ export function Skills() {
                   <p className="text-xs font-semibold tracking-widest text-muted-foreground uppercase mb-2">
                     Programming
                   </p>
-                  <h3 className="text-2xl font-semibold text-white">Python</h3>
-                  <p className="text-xs text-slate-400 mt-1">Primary language</p>
+                  <h3 className="text-2xl font-semibold text-foreground">Python</h3>
+                  <p className="text-xs text-muted-foreground mt-1">Primary language</p>
                 </div>
                 <FloatingIcon>
                   <SiPython size={52} />
@@ -155,7 +155,7 @@ export function Skills() {
                 <p className="text-xs font-semibold tracking-widest text-muted-foreground uppercase mb-2">
                   Database
                 </p>
-                <h3 className="text-xl font-semibold text-white">SQL</h3>
+                <h3 className="text-xl font-semibold text-foreground">SQL</h3>
               </div>
               <FloatingIcon>
                 <SiPostgresql size={44} />
@@ -177,21 +177,21 @@ export function Skills() {
               </div>
 
               {/* TensorFlow */}
-              <div className="flex-1 flex flex-col justify-center items-center gap-3 rounded-xl border border-slate-700/50 bg-slate-900/50 p-4">
+              <div className="flex-1 flex flex-col justify-center items-center gap-3 rounded-xl border border-border bg-secondary/60 p-4">
                 <FloatingIcon>
-                  <SiTensorflow size={40} className="text-orange-400" />
+                  <SiTensorflow size={40} className="text-orange-500" />
                 </FloatingIcon>
-                <span className="text-sm font-medium text-white">TensorFlow</span>
-                <span className="text-[10px] text-slate-400">Deep Learning</span>
+                <span className="text-sm font-medium text-foreground">TensorFlow</span>
+                <span className="text-[10px] text-muted-foreground">Deep Learning</span>
               </div>
 
               {/* Scikit-learn */}
-              <div className="flex-1 flex flex-col justify-center items-center gap-3 rounded-xl border border-slate-700/50 bg-slate-900/50 p-4">
+              <div className="flex-1 flex flex-col justify-center items-center gap-3 rounded-xl border border-border bg-secondary/60 p-4">
                 <FloatingIcon>
-                  <SiScikitlearn size={40} className="text-yellow-400" />
+                  <SiScikitlearn size={40} className="text-amber-500" />
                 </FloatingIcon>
-                <span className="text-sm font-medium text-white">Scikit-learn</span>
-                <span className="text-[10px] text-slate-400">Classical ML</span>
+                <span className="text-sm font-medium text-foreground">Scikit-learn</span>
+                <span className="text-[10px] text-muted-foreground">Classical ML</span>
               </div>
             </TiltCard>
           </motion.div>
@@ -204,10 +204,10 @@ export function Skills() {
                   <p className="text-xs font-semibold tracking-widest text-muted-foreground uppercase mb-1">
                     Analysis
                   </p>
-                  <h3 className="text-xl font-semibold text-white">NumPy</h3>
+                  <h3 className="text-xl font-semibold text-foreground">NumPy</h3>
                 </div>
                 <FloatingIcon>
-                  <SiNumpy size={38} className="text-sky-400" />
+                  <SiNumpy size={38} className="text-sky-500" />
                 </FloatingIcon>
               </div>
               <div className="flex flex-wrap gap-1.5 mt-3">
@@ -221,14 +221,14 @@ export function Skills() {
           <motion.div variants={cardVariants} className="group col-span-2">
             <TiltCard className="p-6 h-full flex items-center gap-6 min-h-[180px]">
               <FloatingIcon>
-                <SiPandas size={54} className="text-purple-400" />
+                <SiPandas size={54} className="text-purple-500" />
               </FloatingIcon>
               <div>
                 <p className="text-xs font-semibold tracking-widest text-muted-foreground uppercase mb-1">
                   Data Analysis
                 </p>
-                <h3 className="text-2xl font-semibold text-white">Pandas</h3>
-                <p className="text-xs text-slate-400 mt-1 mb-3">Wrangling &amp; Feature Engineering</p>
+                <h3 className="text-2xl font-semibold text-foreground">Pandas</h3>
+                <p className="text-xs text-muted-foreground mt-1 mb-3">Wrangling &amp; Feature Engineering</p>
                 <div className="flex flex-wrap gap-2">
                   <Pill icon={<TrendingUp size={11} />} label="DataFrames" />
                   <Pill icon={<TrendingUp size={11} />} label="Aggregations" />
@@ -243,13 +243,13 @@ export function Skills() {
             <TiltCard className="p-6 h-full flex flex-col justify-between min-h-[160px]">
               <div className="flex items-center gap-3">
                 <FloatingIcon>
-                  <BarChart2 size={34} className="text-blue-400" />
+                  <BarChart2 size={34} className="text-blue-500" />
                 </FloatingIcon>
                 <div>
                   <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
                     Visualization
                   </p>
-                  <h3 className="text-lg font-semibold text-white">Matplotlib</h3>
+                  <h3 className="text-lg font-semibold text-foreground">Matplotlib</h3>
                 </div>
               </div>
               <div className="flex flex-wrap gap-1.5 mt-3">
@@ -264,13 +264,13 @@ export function Skills() {
             <TiltCard className="p-6 h-full flex flex-col justify-between min-h-[160px]">
               <div className="flex items-center gap-3">
                 <FloatingIcon>
-                  <TrendingUp size={34} className="text-teal-400" />
+                  <TrendingUp size={34} className="text-teal-600" />
                 </FloatingIcon>
                 <div>
                   <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
                     Visualization
                   </p>
-                  <h3 className="text-lg font-semibold text-white">Seaborn</h3>
+                  <h3 className="text-lg font-semibold text-foreground">Seaborn</h3>
                 </div>
               </div>
               <div className="flex flex-wrap gap-1.5 mt-3">
@@ -288,25 +288,25 @@ export function Skills() {
                   <p className="text-xs font-semibold tracking-widest text-muted-foreground uppercase mb-1">
                     Future Learning
                   </p>
-                  <h3 className="text-2xl font-semibold text-white">Next Frontiers</h3>
-                  <p className="text-xs text-slate-400 mt-1">Currently exploring &amp; deepening</p>
+                  <h3 className="text-2xl font-semibold text-foreground">Next Frontiers</h3>
+                  <p className="text-xs text-muted-foreground mt-1">Currently exploring &amp; deepening</p>
                 </div>
 
                 <div className="flex flex-wrap gap-5 md:ml-auto">
                   {[
-                    { icon: <Brain size={28} />, label: "Deep Learning", color: "text-violet-400" },
-                    { icon: <MessageSquare size={28} />, label: "NLP", color: "text-emerald-400" },
-                    { icon: <Bot size={28} />, label: "Generative AI", color: "text-sky-400" },
-                    { icon: <Sparkles size={28} />, label: "LLMs", color: "text-amber-400" },
+                    { icon: <Brain size={28} />, label: "Deep Learning", color: "text-violet-500" },
+                    { icon: <MessageSquare size={28} />, label: "NLP", color: "text-emerald-600" },
+                    { icon: <Bot size={28} />, label: "Generative AI", color: "text-sky-500" },
+                    { icon: <Sparkles size={28} />, label: "LLMs", color: "text-amber-500" },
                   ].map(({ icon, label, color }) => (
                     <motion.div
                       key={label}
                       whileHover={{ scale: 1.08, y: -4 }}
                       transition={{ type: "spring", stiffness: 300, damping: 18 }}
-                      className="flex flex-col items-center gap-2 rounded-xl border border-slate-700/60 bg-slate-900/60 px-6 py-4 hover:border-primary/50 transition-colors duration-200 cursor-default"
+                      className="flex flex-col items-center gap-2 rounded-xl border border-border bg-secondary px-6 py-4 hover:border-primary/40 hover:bg-primary/5 transition-colors duration-200 cursor-default"
                     >
                       <span className={color}>{icon}</span>
-                      <span className="text-xs font-medium text-slate-300">{label}</span>
+                      <span className="text-xs font-medium text-foreground">{label}</span>
                     </motion.div>
                   ))}
                 </div>

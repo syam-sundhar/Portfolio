@@ -36,56 +36,33 @@
 }
 
 :root {
-  --background: 223 39% 7%; /* #0B0F19 */
-  --foreground: 0 0% 100%; /* #FFFFFF */
-  --border: 217 33% 17%; /* #1E293B */
-  --input: 217 33% 17%;
-  --ring: 217 91% 60%;
-  --card: 223 39% 7%;
-  --card-foreground: 0 0% 100%;
-  --card-border: 217 33% 17%;
-  
-  --primary: 217 91% 60%; /* #3B82F6 */
+  /* Bright Minimalism ─────────────────────────── */
+  --background:   0 0% 100%;          /* #FFFFFF   */
+  --foreground:   222 47% 11%;        /* #0F172A   */
+  --border:       214 32% 91%;        /* #E2E8F0   */
+  --input:        214 32% 91%;
+  --ring:         221 83% 53%;
+
+  --card:         210 40% 98%;        /* #F8FAFC   */
+  --card-foreground: 222 47% 11%;
+  --card-border:  214 32% 91%;
+
+  --primary:      221 83% 53%;        /* #2563EB   */
   --primary-foreground: 0 0% 100%;
-  
-  --secondary: 217 33% 17%;
-  --secondary-foreground: 215 20% 65%; /* #94A3B8 */
-  
-  --muted: 217 33% 17%;
-  --muted-foreground: 215 20% 65%;
-  
-  --accent: 217 91% 60%;
+
+  --secondary:    210 40% 96%;        /* #F1F5F9   */
+  --secondary-foreground: 222 47% 11%;
+
+  --muted:        210 40% 96%;
+  --muted-foreground: 215 16% 47%;   /* #64748B   */
+
+  --accent:       221 83% 53%;
   --accent-foreground: 0 0% 100%;
-  
-  --success: 142 71% 45%;
+
+  --success:      142 71% 45%;
 
   --app-font-sans: 'Inter', sans-serif;
   --radius: 0.75rem;
-}
-
-.dark {
-  --background: 223 39% 7%;
-  --foreground: 0 0% 100%;
-  --border: 217 33% 17%;
-  --input: 217 33% 17%;
-  --ring: 217 91% 60%;
-  --card: 223 39% 7%;
-  --card-foreground: 0 0% 100%;
-  --card-border: 217 33% 17%;
-  
-  --primary: 217 91% 60%;
-  --primary-foreground: 0 0% 100%;
-  
-  --secondary: 217 33% 17%;
-  --secondary-foreground: 215 20% 65%;
-  
-  --muted: 217 33% 17%;
-  --muted-foreground: 215 20% 65%;
-  
-  --accent: 217 91% 60%;
-  --accent-foreground: 0 0% 100%;
-  
-  --success: 142 71% 45%;
 }
 
 @layer base {
@@ -99,8 +76,8 @@
 
 /* selection */
 ::selection {
-  background-color: hsl(var(--primary) / 0.3);
-  color: white;
+  background-color: hsl(var(--primary) / 0.15);
+  color: hsl(var(--primary));
 }
 
 /* Custom scrollbar */

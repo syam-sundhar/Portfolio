@@ -13,12 +13,12 @@ import { Footer } from "@/components/sections/Footer";
 
 function App() {
   useEffect(() => {
-    // Force dark mode
-    document.documentElement.classList.add("dark");
+    // Bright minimalism — ensure light mode
+    document.documentElement.classList.remove("dark");
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-background text-foreground selection:bg-primary/30 selection:text-white">
+    <div className="relative min-h-screen bg-background text-foreground">
       <BackgroundGrid />
       <Nav />
       
