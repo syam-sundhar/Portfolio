@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap');
+/*
+ * Classic editorial typography pairing:
+ *   Headings  — Playfair Display (refined old-style serif, the gold standard
+ *               for editorial design; used by The Guardian, NYT, etc.)
+ *   Body/UI   — Lora (humanist text serif, extremely readable at small sizes,
+ *               pairs perfectly with Playfair)
+ *   Mono      — kept for code snippets
+ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @plugin "@tailwindcss/typography";
@@ -30,8 +38,10 @@
 
   --color-success: hsl(var(--success));
 
-  --font-sans: 'Geist', var(--app-font-sans);
-  
+  /* Expose both families as Tailwind tokens */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans:    'Lora', Georgia, serif;
+
   --radius-xl: 0.75rem;
 }
 
@@ -61,7 +71,7 @@
 
   --success:      142 71% 45%;
 
-  --app-font-sans: 'Inter', sans-serif;
+  --app-font-sans: 'Lora', Georgia, serif;
   --radius: 0.75rem;
 }
 
@@ -69,8 +79,37 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply font-sans antialiased bg-background text-foreground overflow-x-hidden;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    font-optical-sizing: auto;
+  }
+
+  /* ── Headings use Playfair Display ──────────────────────── */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-optical-sizing: auto;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-weight: 700; }
+  h2 { font-weight: 700; }
+  h3 { font-weight: 600; }
+  h4 { font-weight: 600; }
+
+  /* ── Refined paragraph rhythm ───────────────────────────── */
+  p {
+    line-height: 1.75;
+    font-weight: 400;
+  }
+
+  /* Small caps for labels / nav / badges */
+  .label, [class*="tracking-wide"] {
+    font-family: 'Lora', Georgia, serif;
   }
 }
 

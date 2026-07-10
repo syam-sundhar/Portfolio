@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { BackgroundGrid } from "@/components/ui/background";
 import { CustomCursor } from "@/components/ui/cursor";
-import { PaperTear } from "@/components/ui/paper-tear";
+import { PaperCut } from "@/components/ui/paper-cut";
 import { Texture } from "@/components/ui/texture";
 import { Nav } from "@/components/sections/Nav";
 import { Hero } from "@/components/sections/Hero";
@@ -23,25 +23,19 @@ function App() {
   return (
     <div className="relative min-h-screen bg-background text-foreground">
       <CustomCursor />
+      <PaperCut />
       <Texture />
       <BackgroundGrid />
       <Nav />
-      
+
       <main className="flex flex-col">
         <Hero />
-        <PaperTear />
         <About />
-        <PaperTear />
         <Skills />
-        <PaperTear />
         <Education />
-        <PaperTear />
         <Experience />
-        <PaperTear />
         <Projects />
-        <PaperTear />
         <Achievements />
-        <PaperTear />
         <Contact />
       </main>
 
