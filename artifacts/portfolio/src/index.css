@@ -1,11 +1,17 @@
 /*
  * Typography:
- *   Headings  — Plus Jakarta Sans (modern grotesque; closest freely-available
- *               match to Berghan Modern Grotesk — same geometric-humanist DNA,
- *               similar optical weight and tight letterspacing)
+ *   Headings  — Berghan (Modern Grotesk, self-hosted OTF)
  *   Body/UI   — Lora (humanist text serif, very readable at small sizes)
  */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@font-face {
+  font-family: 'Berghan';
+  src: url('/fonts/Berghan-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @plugin "@tailwindcss/typography";
@@ -38,7 +44,7 @@
   --color-success: hsl(var(--success));
 
   /* Expose both families as Tailwind tokens */
-  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: 'Berghan', system-ui, sans-serif;
   --font-sans:    'Lora', Georgia, serif;
 
   --radius-xl: 0.75rem;
@@ -89,7 +95,7 @@
 
   /* ── Headings use Plus Jakarta Sans (Berghan Modern Grotesk match) ── */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Berghan', system-ui, sans-serif;
     font-optical-sizing: auto;
     line-height: 1.18;
     letter-spacing: -0.01em;
