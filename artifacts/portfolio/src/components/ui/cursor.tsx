@@ -81,15 +81,16 @@ export function CustomCursor() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  /* ── per-state ring config ── */
+  /* ── per-state ring config ──
+     bg is always white so mix-blend-mode:difference inverts everything under the ring.
+     Border is removed — the inversion itself forms the visible ring boundary.        ── */
   const ringConfig = {
-    default: { size: 32,  bg: "transparent",          border: "rgba(15,23,42,0.35)",  rotate: 0  },
-    hover:   { size: 48,  bg: "rgba(37,99,235,0.10)", border: "rgba(37,99,235,0.80)", rotate: 0  },
-    button:  { size: 56,  bg: "rgba(37,99,235,0.12)", border: "rgba(37,99,235,0.90)", rotate: 0  },
-    image:   { size: 64,  bg: "rgba(15,23,42,0.06)",  border: "rgba(15,23,42,0.40)",  rotate: 0  },
-    // Knife: oval ring rotated 45° like a blade path
-    cutting: { size: 40,  bg: "rgba(15,23,42,0.06)",  border: "rgba(15,23,42,0.55)",  rotate: 45 },
-  } satisfies Record<CursorState, { size: number; bg: string; border: string; rotate: number }>;
+    default: { size: 32, rotate: 0  },
+    hover:   { size: 48, rotate: 0  },
+    button:  { size: 56, rotate: 0  },
+    image:   { size: 64, rotate: 0  },
+    cutting: { size: 40, rotate: 45 },
+  } satisfies Record<CursorState, { size: number; rotate: number }>;
 
   const cfg = ringConfig[state];
 
@@ -107,28 +108,25 @@ export function CustomCursor() {
         aria-hidden="true"
         className="pointer-events-none fixed top-0 left-0 z-[9999] rounded-full"
         style={{
-          x: ringX,
-          y: ringY,
-          translateX: "-50%",
-          translateY: "-50%",
+          x:            ringX,
+          y:            ringY,
+          translateX:   "-50%",
+          translateY:   "-50%",
+          // White fill + difference blend = invert every color underneath the ring
+          mixBlendMode: "difference",
+          backgroundColor: "rgb(255,255,255)",
         }}
         animate={{
-          width:           cfg.size,
-          height:          state === "cutting" ? cfg.size * 0.55 : cfg.size,
-          opacity:         visible ? 1 : 0,
-          backgroundColor: cfg.bg,
-          borderColor:     cfg.border,
-          borderWidth:     state === "cutting" ? 1 : 1.5,
-          borderStyle:     "solid",
-          rotate:          cfg.rotate,
+          width:   cfg.size,
+          height:  state === "cutting" ? cfg.size * 0.55 : cfg.size,
+          opacity: visible ? 1 : 0,
+          rotate:  cfg.rotate,
         }}
         transition={{
-          width:           { ...RING_SPRING, type: "spring" },
-          height:          { ...RING_SPRING, type: "spring" },
-          opacity:         { duration: 0.15 },
-          backgroundColor: { duration: 0.2 },
-          borderColor:     { duration: 0.2 },
-          rotate:          { type: "spring", stiffness: 300, damping: 25 },
+          width:   { ...RING_SPRING, type: "spring" },
+          height:  { ...RING_SPRING, type: "spring" },
+          opacity: { duration: 0.15 },
+          rotate:  { type: "spring", stiffness: 300, damping: 25 },
         }}
       >
         {/* Knife blade icon in cutting mode */}

@@ -1,12 +1,11 @@
 /*
- * Classic editorial typography pairing:
- *   Headings  — Playfair Display (refined old-style serif, the gold standard
- *               for editorial design; used by The Guardian, NYT, etc.)
- *   Body/UI   — Lora (humanist text serif, extremely readable at small sizes,
- *               pairs perfectly with Playfair)
- *   Mono      — kept for code snippets
+ * Typography:
+ *   Headings  — Plus Jakarta Sans (modern grotesque; closest freely-available
+ *               match to Berghan Modern Grotesk — same geometric-humanist DNA,
+ *               similar optical weight and tight letterspacing)
+ *   Body/UI   — Lora (humanist text serif, very readable at small sizes)
  */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @plugin "@tailwindcss/typography";
@@ -39,7 +38,7 @@
   --color-success: hsl(var(--success));
 
   /* Expose both families as Tailwind tokens */
-  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-sans:    'Lora', Georgia, serif;
 
   --radius-xl: 0.75rem;
@@ -88,9 +87,9 @@
     font-optical-sizing: auto;
   }
 
-  /* ── Headings use Playfair Display ──────────────────────── */
+  /* ── Headings use Plus Jakarta Sans (Berghan Modern Grotesk match) ── */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-optical-sizing: auto;
     line-height: 1.18;
     letter-spacing: -0.01em;
